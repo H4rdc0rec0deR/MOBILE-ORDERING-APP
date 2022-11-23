@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  font-family: "Smythe";
+  width: 600px;
+}
+
+header {
+  padding-left: 46px;
+  padding-top: 21px;
+
+  font-style: normal;
+  height: 146px;
+  background-image: url(images/ferks-guare-KEZdWfYD-ow-unsplash.jpg);
+  background-size: cover;
+  background-position: 0px -153px;
+}
+
+h1 {
+  height: 24px;
+
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 62%;
+
+  color: #ffffff;
+}
+
+h3 {
+  height: 8px;
+
+  font-weight: 400;
+  font-size: 22.4216px;
+  line-height: 14px;
+
+  color: #ffffff;
+}
+
+.conatainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  margin: 0 auto;
+  width: 100%;
+  margin: auto;
+}
+
+.menu {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: center;
+  margin: auto;
+  font-style: normal;
+  justify-content: center;
+}
+
+.food {
+  border-bottom: 1px solid lightgray;
+  width: 508px;
+}
+
+.food-inner {
+  display: flex;
+  align-items: flex-start;
+  padding: 1px;
+}
+
+.food-emoji {
+  width: 99px;
+  height: 89px;
+
+  margin: 26px;
+  font-weight: 400;
+  font-size: 78px;
+  line-height: 98px;
+}
+
+.food-details {
+  font-weight: 400;
+  width: 150px;
+}
+
+.name {
+  margin-top: 35px;
+  margin-bottom: 8px;
+
+  font-size: 28px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.food-text {
+  margin: 0px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #8b8b8b;
+}
+
+.price {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.add-button {
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-left: 130px;
+  width: 40px;
+  height: 40px;
+  color: #3c3c3c;
+  border: 1.5px solid #dedede;
+  border-radius: 50%;
+  font-weight: 200;
+  font-size: 22px;
+  background-color: #ffffff;
+}
+
+.add-button:hover {
+  background-color: rgb(249, 249, 249);
+}
+
+.add-button:active {
+  background-color: whitesmoke;
+}
+
+/* order */
+
+.hidden-order {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-order {
+  margin: 0 26px;
+  font-style: normal;
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+
+  color: #000000;
+  text-align: center;
+}
+
+.order {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 17px;
+}
+
+.order-inner {
+  display: flex;
+}
+
+.positions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submition {
+  border-top: 2px solid #000000;
+}
+
+.sum {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  margin-top: 27px;
+  width: 508px;
+  height: 60px;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+
+  background: #16db99;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.submit-button:hover {
+  background: #16d897;
+}
+
+.submit-button:active {
+  background: #16d092;
+}
+
+.remove {
+  margin-top: 23px;
+  width: 77px;
+  height: 22px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  color: #bbbbbb;
+  background: #ffffff;
+  border: none;
+}
+
+.remove:hover {
+  color: #989898;
+}
+
+.remove:active {
+  color: grey;
+  font-weight: bold;
+}
+
+.position {
+  display: flex;
+}
+
+/* modal */
+
+.modal-outer {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 524px;
+  height: 542.24px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px #666;
+  background-color: white;
+  color: whitesmoke;
+  text-align: center;
+
+  filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+.modal-h2 {
+  margin-top: 47px;
+  margin-bottom: 30px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+input {
+  margin-top: 16px;
+  height: 71.3px;
+  padding: 10px;
+  width: 475.91px;
+  border: 1.29664px solid #757575;
+  border-radius: 3.88991px;
+}
+
+.modal-btn {
+  margin-top: 46px;
+  width: 475.91px;
+  height: 71.3px;
+
+  color: white;
+  background: #16db99;
+  border-radius: 3.88991px;
+  border: none;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.modal-btn:hover {
+  background: #16d897;
+}
+
+.modal-btn:active {
+  background: #16d092;
+}
+
+/* finnal message */
+
+.message-box {
+  margin-top: 45px;
+  text-align: center;
+  padding-top: 25px;
+  width: 504px;
+  height: 120px;
+
+  background: #ecfdf5;
+  border-radius: 3px;
+}
+
+.message {
+  font-family: "Smythe";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 17px;
+
+  color: #065f46;
+}

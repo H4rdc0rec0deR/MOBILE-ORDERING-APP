@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mobile Ordering App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--<img src="images/ferks-guare-KEZdWfYD-ow-unsplash.jpg" class="picture" />-->
+      <h1>Jullian's Dinner</h1>
+      <h3>The best burgers and pizza in Berlin</h3>
+    </header>
+    <main>
+      <div class="conatainer">
+        <div class="menu" id="menu"></div>
+      </div>
+      <div class="hidden-order" id="hidden-order">
+        <div class="your-order" id="your-order">
+          <h2>Your Order</h2>
+          <div class="order" id="order"></div>
+          <div class="submition">
+            <div class="sum">
+              <p>Total Price</p>
+              <p id="price">$0</p>
+            </div>
+            <div class="sub">
+              <button class="submit-button" id="submit-button">
+                Complete Order
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-outer" id="modal-outer">
+          <div class="modal" id="modal">
+            <p class="modal-h2">Enter card details</p>
+            <form id="consent-form">
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Enter your full name"
+                aria-label="Full name"
+                required
+              />
+              <input
+                type="text"
+                name="cardNumber"
+                placeholder="Enter card number"
+                aria-label="Card number"
+                required
+              />
+              <input
+                type="text"
+                name="ccv"
+                placeholder="Enter CCV"
+                aria-label="CCV"
+                required
+              />
+              <button type="submit" class="modal-btn" id="modal-btn">
+                Pay
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="index.js" type="module"></script>
+</html>
